@@ -46,13 +46,35 @@ export const Navbar = () => {
                     <Button size="sm">Contact Me</Button>
                 </div>
 
-                {/* Mobile Menu */}
+                {/* Mobile Menu Button */}
                 <button
                     className="md:hidden p-2 text-secondary-foreground cursor-pointer"
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
                         {isMoblieMenuOpen ? <X size={24}/> : <Menu size={24} />}
                 </button>
             </nav>
+
+            {/* Mobile Menu */}
+            {isMoblieMenuOpen && (
+                <div className="md:hidden glass-strong animate-fade-in">
+                    <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
+                        {navLinks.map((link, index) => (
+                            <a
+                                href={link.href}
+                                key={index}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-lg text-muted-foreground hover:text-secondary-foreground py-2"
+                            >
+                                {link.label}
+                            </a>
+                        ))}
+
+                        <Button onClick={() => setIsMobileMenuOpen(false)}>
+                            Contact Me
+                        </Button>
+                    </div>
+                </div>
+            )}
         </header>
     ); 
 }
