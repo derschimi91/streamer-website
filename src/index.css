@@ -28,6 +28,9 @@
   --color-highlight: #4cf9db;
   --color-surface: #020911;
 
+  /* Color Hover for Navbar */
+  --color-hover-navbar: #5f7e9a;
+
   /* Radius */
 
   --radius-25: 0.25rem;
