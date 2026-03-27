@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-background: #040d14;
+  --bg-color-background: #232b36;
+  --color-second-background: #26303a;
+  --color-foreground: #f0f2f5;
+
+  --color-card: #142943;
+
+  /* Color Primary */
+  --color-primary: #4ce9fa;
+  --color-primary-foreground: #4e6d9a;
+
+  /* Color Secondary */
+  --color-secondary: #232b36;
+  --color-secondary-foreground: #e2e3e6;
+
+  /* Color Muted */
+  --color-muted: #0a131a;
+  --color-muted-foreground: #313c46;
+
+  /* Color Border */
+  --color-border: #27313b;
+
+  /* Color Highlight and Surface */
+  --color-highlight: #4cf9db;
+  --color-surface: #020911;
+
+  /* Radius */
+
+  --radius-25: 0.25rem;
+  --radius-50: 0.5rem;
+  --radius-75: 0.75rem;
+  --radius-100: 1rem;
+  --radius-150: 1.5rem;
+  --radius-200: 2rem;
+  --radius-250: 2.5rem;
+  --radius-300: 3rem;
+  --radius-350: 3.5rem;
+  --radius-400: 4rem;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-second-background);
+    color: var(--color-secondary-foreground);
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-serif {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+@layer components {
+  .container-navbar {
+    width: 80%;
+    height: auto;
+    padding-block: 2px;
+    padding-inline: 2px;
+    margin-block: 2px;
+    margin-inline: 2px;
+  }
+  .glass {
+    background-color: color-mix( in srgb, var(--color-gray-800) 80%, transparent);
+    backdrop-filter: blur(16px);
+  }
+}
