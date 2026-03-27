@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Button } from "@/components/Button";
 
 const navLinks = [
     { href: "#about", label: "About" },
@@ -37,6 +38,11 @@ export const Navbar = () => {
                             </a>
                         ))}
                     </div>
+                </div>
+
+                {/* Contact Button */}
+                <div className="hidden md:block">
+                    <Button size="sm">Contact Me</Button>
                 </div>
             </nav>
         </header>
