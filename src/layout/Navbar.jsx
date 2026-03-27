@@ -11,6 +11,7 @@ const navLinks = [
 
 export const Navbar = () => {
 
+    const [isMoblieMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
@@ -44,6 +45,13 @@ export const Navbar = () => {
                 <div className="hidden md:block">
                     <Button size="sm">Contact Me</Button>
                 </div>
+
+                {/* Mobile Menu */}
+                <button
+                    className="md:hidden p-2 text-secondary-foreground cursor-pointer"
+                    onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
+                        {isMoblieMenuOpen ? <X size={24}/> : <Menu size={24} />}
+                </button>
             </nav>
         </header>
     ); 
