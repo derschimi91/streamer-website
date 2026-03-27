@@ -7,6 +7,7 @@ import { MyMainGames } from "@/sections/MyMainGames";
 import { Cooperations } from "@/sections/Cooperations";
 import { Media } from "@/sections/Media";
 import { Contact } from "@/sections/Contact";
+import { Footer } from "@/layout/Footer";
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
         <Media />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
