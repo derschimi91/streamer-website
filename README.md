@@ -1,57 +1,15 @@
 # Streamer Website by Der_Schimanski
 
-Eine persoenliche Streamer- und Creator-Website fuer Der_Schimanski, aufgebaut mit React, Vite und Tailwind CSS.
-Das Projekt entwickelt sich Schritt fuer Schritt zu einer modernen Landingpage mit eigener Farbwelt, wiederverwendbaren UI-Komponenten und einer glasartigen Oberfläche.
-
-<<<<<<< HEAD
-## Tech Stack
-
-=======
-<<<<<<< HEAD
+Eine persoenliche Streamer- und Creator-Website fuer Der_Schimanski, aufgebaut mit React, Vite und Tailwind CSS 4.
+Das Projekt entwickelt sich Schritt fuer Schritt zu einer modernen Landingpage mit eigener Farbwelt, wiederverwendbaren UI-Komponenten, Glasoptik und einer immer staerkeren Hero-Inszenierung.
 
 ## Tech Stack
-=======
-<<<<<<< HEAD
-## Tech Stack
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0a648bcac366f798d2ef3caad1d858382a77c788
-=======
 
-## Tech Stack
-=======
->>>>>>> e7f7ebdc02efe4bc0fca1ef3c919f79832bb13da
-- Added the main page structure with the `Hero`, `About`, `MyStats`, `Highlights`, `MyMainGames`, `Cooperations`, `Media`, and `Contact` sections.
-- Improved the Navbar with desktop navigation, a scroll effect, a mobile menu, and a logo image.
-- Refined the Navbar logo layout so the image and text sit next to each other more cleanly.
-- Added the `glass-strong` class in `index.css` to give the Navbar a stronger glass effect while scrolling.
-- Enhanced the `glass` and `glass-strong` classes with borders, glow, inset highlights, and radial light effects for a stronger glass look.
-- Added a new Footer with navigation links, social media icons, and the current year.
-- Updated the Footer layout so the copyright text now sits below the name and next to the logo image.
-- Increased and refined the Footer logo area for a clearer visual identity.
-- Switched the social media icons in the Footer to `react-icons`.
-- Added a reusable `Button` component with multiple size variants for the UI.
-- Expanded the `Hero` section background with a stronger gradient overlay and animated light-blue floating dots.
-- The Navbar is not final yet and may be reworked later.
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6bb3a0ea83e786d9ec66eb82252c58beb7579ad8
-=======
-
->>>>>>> b44f10c6082b77e0756a22a17c8aecebc320e612
->>>>>>> 573f84afb7a8345b72dbd16131f955a87fdbf153
-
->>>>>>> 0a648bcac366f798d2ef3caad1d858382a77c788
->>>>>>> e7f7ebdc02efe4bc0fca1ef3c919f79832bb13da
 - React 19
-- Vite
+- Vite 8
 - Tailwind CSS 4
-- `lucide-react`
 - `react-icons`
+- `lucide-react`
 
 ## Projektstart
 
@@ -91,20 +49,22 @@ Die Grundstruktur der Seite ist bereits eingebunden. Aktuell enthaelt das Projek
 
 ### Hero Section
 
-- Fullscreen-Hero-Bereich mit Hintergrundbild
-- Dunkler Gradient fuer bessere Lesbarkeit ueber dem Hero-Bild
-- Animierte hellblaue Punkte im Hintergrund
-- Badge fuer Twitch- und Creator-Branding
+- Fullscreen-Hero-Bereich mit Hintergrundbild und dunklem Gradient-Overlay fuer bessere Lesbarkeit
+- Animierte hellblaue Partikel im Hintergrund fuer mehr Bewegung im Einstieg
+- Badge fuer Twitch- und Creator-Branding oberhalb der Headline
 - Grosse Headline mit hervorgehobenen Textstellen und Glow-Effekt
-- CTA-Bereich mit Button fuer Twitch
+- CTA-Bereich mit Twitch- und YouTube-Button
+- Rechte Hero-Spalte mit einer visuellen Bildkomposition aus Avatar und zwei schwebenden Game-Cards
+- Neue Hero-Assets in `public/` fuer Avatar, Building-Game-Motiv und Survival-Motiv eingebunden
 
 ### UI und Styling
 
 - Eigene Theme-Farbvariablen in `src/index.css`
 - Eigene `glass`- und `glass-strong`-Klassen fuer die Glasoptik
 - Blur-, Border-, Glow- und Lichtreflex-Effekte fuer Oberflaechen
-- Eigene Animationen wie `fade-in`, `fade-in-left` und `drift-slow`
 - Wiederverwendbare `Button`-Komponente mit mehreren Groessenvarianten
+- Eigene Animations-Utilities wie `fade-in`, `fade-in-left`, `slide-in-left`, `slide-in-right` und `slide-up`
+- Animation-Delay-Utilities fuer gestaffelte Hero-Elemente
 
 ### Buttons und Farbsystem
 
@@ -116,11 +76,16 @@ Die Grundstruktur der Seite ist bereits eingebunden. Aktuell enthaelt das Projek
 
 ## Neuere Aenderungen
 
+- Hero visuell deutlich erweitert: Die rechte Spalte zeigt jetzt den Avatar als Hauptmotiv sowie zwei dekorative Game-Cards mit versetzter Positionierung
+- Neue Bilddateien `public/ai_building_game.png`, `public/ai_survival_game.png` und `public/my-character-2.png` ins Projekt aufgenommen
+- Neue Einstiegseffekte fuer die Hero-Komposition eingebaut: `slide-in-left`, `slide-in-right` und `slide-up`
+- Hero-Elemente ueber Animation-Delays zeitlich gestaffelt, damit der Einstieg lebendiger wirkt
 - Twitch-CTA im Hero von einer uneindeutigen roten Variante auf `color="twitch"` umgestellt
 - Farbzuordnung in `Button.jsx` bereinigt, damit die Theme-Farben korrekt greifen
 - Mehrere Tippfehler in der Button-Komponente korrigiert, unter anderem bei `font-medium`, `focus-visible` und `text-secondary-foreground`
 - Hover-Farben fuer Twitch und YouTube in `src/index.css` auf gueltige Farbwerte umgestellt
 - Projektinterne Erklaerdatei [BUTTON_GUIDE.md](./BUTTON_GUIDE.md) hinzugefuegt, damit die Struktur von `Button.jsx` und das Farbsystem leichter nachvollziehbar sind
+- README-Merge-Konfliktreste bereinigt und die Projektdokumentation insgesamt vereinheitlicht
 
 ## Bisherige Bugfixes
 
@@ -130,7 +95,6 @@ Die Grundstruktur der Seite ist bereits eingebunden. Aktuell enthaelt das Projek
 - Mobile-Sichtbarkeit der Navigation korrigiert
 - Footer-Struktur fuer Bild, Name und Text sauber ausgerichtet
 - Fehlerhafte bzw. unpassende Button-Farbklassen ueberarbeitet
-- README-Merge-Konfliktreste bereinigt
 
 ## Dokumentation im Projekt
 
@@ -141,11 +105,10 @@ Die Grundstruktur der Seite ist bereits eingebunden. Aktuell enthaelt das Projek
 - Finale optische Ueberarbeitung der Navbar
 - Echte Social-Media-Links statt `#`
 - Funktion fuer den `Contact Me`-Button
-- Rechte Spalte der Hero Section weiter ausbauen
 - Weitere Inhalte und Feinschliff in den restlichen Sektionen
 - Abschliessender Responsive- und UI-Feinschliff fuer die gesamte Seite
 
 ## Projektstatus
 
 Das Grundlayout und die wichtigsten UI-Bausteine stehen bereits.
-Der aktuelle Fokus liegt auf Feinschliff, zusaetzlichem Content, sauberer Komponentenstruktur und dem weiteren Ausbau des Designs.
+Der aktuelle Fokus liegt auf Feinschliff, zusaetzlichem Content, sauberer Komponentenstruktur und dem weiteren Ausbau der Hero-Inszenierung.

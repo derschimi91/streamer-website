@@ -70,6 +70,32 @@ export const Hero = () => {
                 </div>
 
                 {/* Right Section Column */}
+                <div className="relative min-h-[560px] flex items-center justify-center">
+                    {/* Card with Image one */}
+                    <div className="absolute top-8 left-15 w-[220px] md:w-[240px] rounded-[28px] overflow-hidden glass border border-primary/30 shadown-2xl rotatd-[-10deg] animation-slide-in-left">
+                        <img
+                            src="/ai_building_game.png"
+                            alt="Building Game"
+                            className="w-full h-[300px] object-cover"
+                        />
+                    </div>
+                    {/* Card with Image two */}
+                    <div className="absolute bottom-10 right-15 -[230px] md:w-[250px] rounded-[28px] overflow-hidden glass border border-primary/30 shadow-2xl rotat-[8deg] animation-slide-in-right animation-delay-300">
+                        <img
+                            src="/ai_survival_game.png"
+                            alt="Survival Game"
+                            className="w-full h-[320px] object-cover"
+                        />
+                    </div>
+                    {/* Main Image */}
+                    <div className="relative z-10 animation-slide-up animation-delay-500">
+                        <img
+                            src="/my-character-2.png"
+                            alt="Der Schimanski Avatar"
+                            className="w-[460px] md:w-[560px] object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.45)]"
+                        />
+                    </div>
+                </div>
             </div>
         </div>
     </section>
