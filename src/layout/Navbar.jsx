@@ -52,7 +52,7 @@ export const Navbar = () => {
 
                 {/* Contact Button */}
                 <div className="hidden md:block hover:text-secondary-foreground transition-all duration-300">
-                    <Button size="sm">Contact Me</Button>
+                    <Button size="default">Contact Me</Button>
                 </div>
 
                 {/* Mobile Menu Button */}
