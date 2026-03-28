@@ -19,7 +19,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(windows.scrollY > 50);
+            setIsScrolled(window.scrollY > 50);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -40,7 +40,7 @@ export const Navbar = () => {
                     </a>
 
                 { /* Desktop Navigation */ }
-                <div className="flex items-center gap-1">
+                <div className="hidden md:flex items-center gap-1">
                     <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
                         {navLinks.map((link, index) => (
                             <a href={link.href} key={index} className="px-6 py-3 text-sm text-shadow-secondary-foreground hover:text-primary rounded-full hover:bg-hover-navbar/20 hover:border-border/40 hover:backdrop-blur-lg hover:ease hover:transition-all hover:duration-400">
@@ -57,7 +57,7 @@ export const Navbar = () => {
 
                 {/* Mobile Menu Button */}
                 <button
-                    className="md:hidden p-2 text-secondary-foreground cursor-pointer"
+                    className="md:hidden p-2 text-secondary-foreground cursor-pointer transition-transform duration-300"
                     onClick={() => setIsMobileMenuOpen((prev) => !prev)}>
                         {isMoblieMenuOpen ? <X size={24}/> : <Menu size={24} />}
                 </button>
@@ -72,7 +72,7 @@ export const Navbar = () => {
                                 href={link.href}
                                 key={index}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-lg text-muted-foreground hover:text-secondary-foreground py-2"
+                                className="text-lg text-secondary-foreground hover:text-primary py-2"
                             >
                                 {link.label}
                             </a>
@@ -86,4 +86,4 @@ export const Navbar = () => {
             )}
         </header>
     ); 
-}
+};

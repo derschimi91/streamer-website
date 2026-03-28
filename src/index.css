@@ -64,17 +64,24 @@
   .font-serif {
     font-family: "Playfair Display", serif;
   }
+
+  .glow-text {
+    text-shadow: 0 0 30px
+      color-mix(in srgb, var(--color-primary) 50%, transparent);
+  }
 }
 
 @layer components {
   .container-navbar {
-    width: 80%;
+    width: 100%;
     height: auto;
     padding-block: 2px;
     padding-inline: 2px;
     margin-block: 2px;
     margin-inline: 2px;
   }
+
+ 
   .glass {
     position: relative;
     background-color: color-mix( in srgb, var(--color-gray-800) 20%, transparent);
@@ -91,7 +98,7 @@
     border-radius: inherit;
     background: radial-gradient(
       circle at 20% 100%,
-      color-mix(in srgb, white 12%, transparent) 0%,
+      color-mix(in srgb, white 8%, transparent) 0%,
       transparent 60%
     );
     pointer-events: none;
@@ -132,5 +139,24 @@
     75% {
       transform: translate(30px, 10px);
     }
+  }
+}
+
+@layer utilities { 
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out both;
   }
 }
