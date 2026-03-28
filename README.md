@@ -6,6 +6,7 @@
 <li>Improved the Navbar with desktop navigation, scroll effect and a mobile menu.</li>
 <li>Added the <code>glass-strong</code> class in <code>index.css</code> so the Navbar gets a stronger glass effect while scrolling.</li>
 <li>Added a new Footer with navigation links, social media icons and the current year.</li>
+<li>Added a reusable <code>Button</code> component with different size variants for the UI.</li>
 <li>Navbar is not final, i think will rework this.</li>
 
 <h2> Bugs and Bugfixes </h2>
