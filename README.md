@@ -3,8 +3,25 @@
 Eine persoenliche Streamer- und Creator-Website fuer Der_Schimanski, aufgebaut mit React, Vite und Tailwind CSS.
 Das Projekt entwickelt sich Schritt fuer Schritt zu einer modernen Landingpage mit eigener Farbwelt, wiederverwendbaren UI-Komponenten und einer glasartigen Oberfläche.
 
+<<<<<<< HEAD
 ## Tech Stack
 
+=======
+<<<<<<< HEAD
+
+## Tech Stack
+=======
+<<<<<<< HEAD
+## Tech Stack
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 0a648bcac366f798d2ef3caad1d858382a77c788
+=======
+
+## Tech Stack
+=======
+>>>>>>> e7f7ebdc02efe4bc0fca1ef3c919f79832bb13da
 - Added the main page structure with the `Hero`, `About`, `MyStats`, `Highlights`, `MyMainGames`, `Cooperations`, `Media`, and `Contact` sections.
 - Improved the Navbar with desktop navigation, a scroll effect, a mobile menu, and a logo image.
 - Refined the Navbar logo layout so the image and text sit next to each other more cleanly.
@@ -17,6 +34,19 @@ Das Projekt entwickelt sich Schritt fuer Schritt zu einer modernen Landingpage m
 - Added a reusable `Button` component with multiple size variants for the UI.
 - Expanded the `Hero` section background with a stronger gradient overlay and animated light-blue floating dots.
 - The Navbar is not final yet and may be reworked later.
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6bb3a0ea83e786d9ec66eb82252c58beb7579ad8
+=======
+
+>>>>>>> b44f10c6082b77e0756a22a17c8aecebc320e612
+>>>>>>> 573f84afb7a8345b72dbd16131f955a87fdbf153
+
+>>>>>>> 0a648bcac366f798d2ef3caad1d858382a77c788
+>>>>>>> e7f7ebdc02efe4bc0fca1ef3c919f79832bb13da
 - React 19
 - Vite
 - Tailwind CSS 4
