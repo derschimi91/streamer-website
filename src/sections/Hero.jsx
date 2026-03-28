@@ -1,3 +1,6 @@
+import { Button } from "@/components/Button";
+import { LiaTwitch, LiaYoutube } from "react-icons/lia";
+
 export const Hero = () => {
     return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -11,6 +14,7 @@ export const Hero = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {[...Array(40)].map((_, i) =>(
                 <div 
+                    key={i}
                     className="absolute w-1.5 h-1.5 rounded-full opacity-60"
                     style={{
                         backgroundColor: "#4ce9fa",
@@ -27,7 +31,7 @@ export const Hero = () => {
 
         {/* Content of Hero Section*/}
         <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Section Column */}
                 <div className="space-y-8">
                     <div className="animate-fade-in">
@@ -38,19 +42,30 @@ export const Hero = () => {
                     </div>
                     {/* Main Headline */}
                     <div className="space-y-4">
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">Straming <span className="text-primary glow-text">and</span>
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">Straming <span className="text-primary glow-text .animation-delay-100">and</span>
                             <br />
                              Create Videos <span className="text-primary glow-text">with</span>
                             <br />
-                            <span class="font-serif italic font-normal text-white">
+                            <span className="font-serif italic font-normal text-white">
                             Fun 
                             </span>
                         </h1>
-                        <p className="text-lg text-secondary-foreground/50 max-w-lg animate-fade-in">
+                        <p className="text-lg text-secondary-foreground/50 max-w-lg animation-fade-in-left animation-delay-600">
                             Hi, I'm Der_Schimanski, a passionate Twitch streamer and YouTube content creator. 
                             Join me on my gaming adventures, where I share fun moments, tips, and engaging content with my amazing community. 
                             Let's connect and have a blast together!
                         </p>
+                    </div>
+                    {/* Twitch and YouTube Buttons */}
+                    <div className="flex flex-wrap gap-4">
+                        <Button size="default" color="twitch" onClick={() => window.open("https://www.twitch.tv/der_schimanski", "_blank")}>
+                            <LiaTwitch size={24} className="inline-block mr-2"/>
+                            Follow Me
+                        </Button>
+                        <Button size="default" color="youtube" onClick={() => window.open("https://www.youtube.com/@Der_Schimanski", "_blank")}>
+                            <LiaYoutube size={24} className="inline-block mr-2"/>
+                            Subscribe
+                        </Button>
                     </div>
                 </div>
 

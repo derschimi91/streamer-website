@@ -36,6 +36,11 @@
   --color-footer-secondary: #f9d7f9;
   --color-footer-hover-primary: var(--color-highlight);
 
+  /* Color for Twitch and YouTube Button */
+  --color-twitch-primary: #9146ff;
+  --color-twitch-hover: #7d35e8;
+  --color-youtube-primary: #ff0000;
+  --color-youtube-hover: #cc0000;
   /* Radius */
 
   --radius-25: 0.25rem;
@@ -156,7 +161,56 @@
     }
   }
 
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+
   .animate-fade-in {
     animation: fade-in 0.8s ease-out both;
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 800ms;
+  }
+
+  .animation-fade-in-left {
+    animation: fade-in-left 0.8s ease-out both;
   }
 }
