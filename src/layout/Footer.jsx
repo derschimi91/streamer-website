@@ -28,7 +28,7 @@ export const Footer = () => {
                     <div className="text-center md:text-left flex items-start gap-3">
                         <img
                             src="/my_Character_2.png"
-                            className="w-15 h-15 rounded-full shrink-0"
+                            className="w-20 h-20 rounded-full shrink-0"
                             alt="Der Schimanski Logo Footer" 
                         />
                         

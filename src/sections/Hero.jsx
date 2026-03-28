@@ -4,8 +4,10 @@ export const Hero = () => {
         {/* Background Hero */}
         <div className="absolute inset-0">
             <img src="/ai_gamingsetup.png" alt="Hero Image" className="w-full h-full object-cover opacity-40"/>
-            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-primary-foreground/10 to-background"/>
+            <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/60 to-background"/>
         </div>
+
+
     </section>
     )
 }

@@ -43,7 +43,7 @@ export const Navbar = () => {
                 <div className="flex items-center gap-1">
                     <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
                         {navLinks.map((link, index) => (
-                            <a href={link.href} key={index} className="px-6 py-3 text-sm text-shadow-secondary-foreground hover:text-primary rounded-full hover:bg-hover-navbar/20 hover:border-border/40 hover:backdrop-blur-lg">
+                            <a href={link.href} key={index} className="px-6 py-3 text-sm text-shadow-secondary-foreground hover:text-primary rounded-full hover:bg-hover-navbar/20 hover:border-border/40 hover:backdrop-blur-lg hover:ease hover:transition-all hover:duration-400">
                                 {link.label}
                             </a>
                         ))}
