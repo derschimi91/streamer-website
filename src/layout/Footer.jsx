@@ -1,11 +1,12 @@
 import { Radio, MessageCircle, Camera, MessagesSquare, Play } from "lucide-react";
+import { LiaDiscord, LiaInstagram, LiaTwitch, LiaTwitter, LiaYoutube } from "react-icons/lia";
 
 const socialLinks = [
-    { icon: Radio, href: "#", label: "Twitch" },
-    { icon: MessageCircle, href: "#", label: "Twitter" },
-    { icon: Camera, href: "#", label: "Instagram" },
-    { icon: MessagesSquare, href: "#", label: "Discord" },
-    { icon: Play, href: "#", label: "YouTube" },
+    { icon: LiaTwitch, href: "#", label: "Twitch" },
+    { icon: LiaTwitter, href: "#", label: "Twitter" },
+    { icon: LiaInstagram, href: "#", label: "Instagram" },
+    { icon: LiaDiscord, href: "#", label: "Discord" },
+    { icon: LiaYoutube, href: "#", label: "YouTube" },
 ];
 
 const footerLinks = [
