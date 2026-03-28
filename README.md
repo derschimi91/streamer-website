@@ -1,14 +1,15 @@
-<h1> Streamer Website by Der_Schimanski </h1>
+# Streamer Website by Der_Schimanski
 
-<h3> Whats new on this Project </h3>
+## What's New In This Project
 
-<li>Last update: Added the main page structure with Hero, About, MyStats, Highlights, MyMainGames, Cooperations, Media and Contact sections.</li>
-<li>Improved the Navbar with desktop navigation, scroll effect and a mobile menu.</li>
-<li>Added the <code>glass-strong</code> class in <code>index.css</code> so the Navbar gets a stronger glass effect while scrolling.</li>
-<li>Added a new Footer with navigation links, social media icons and the current year.</li>
-<li>Added a reusable <code>Button</code> component with different size variants for the UI.</li>
-<li>Navbar is not final, i think will rework this.</li>
+- Added the main page structure with the `Hero`, `About`, `MyStats`, `Highlights`, `MyMainGames`, `Cooperations`, `Media`, and `Contact` sections.
+- Improved the Navbar with desktop navigation, a scroll effect, and a mobile menu.
+- Added the `glass-strong` class in `index.css` to give the Navbar a stronger glass effect while scrolling.
+- Added a new Footer with navigation links, social media icons, and the current year.
+- Added a reusable `Button` component with multiple size variants for the UI.
+- The Navbar is not final yet and may be reworked later.
 
-<h2> Bugs and Bugfixes </h2>
-<li>Fixed the Footer icons by replacing unsupported <code>lucide-react</code> brand icons so the project builds correctly again.</li>
-<li>Fixed the copyright text in the Footer.</li>
+## Bugs and Bug Fixes
+
+- Fixed the Footer icons by replacing unsupported `lucide-react` brand icons so the project builds correctly again.
+- Fixed the copyright text in the Footer.
