@@ -4,6 +4,10 @@ Eine persoenliche Streamer- und Creator-Website fuer Der_Schimanski, aufgebaut m
 Das Projekt wird Schritt fuer Schritt als moderne Landingpage mit mehreren Sektionen, eigener Farbwelt und einer glasartigen UI weiterentwickelt.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> b44f10c6082b77e0756a22a17c8aecebc320e612
 ## Tech Stack
 =======
 - Added the main page structure with the `Hero`, `About`, `MyStats`, `Highlights`, `MyMainGames`, `Cooperations`, `Media`, and `Contact` sections.
@@ -18,7 +22,11 @@ Das Projekt wird Schritt fuer Schritt als moderne Landingpage mit mehreren Sekti
 - Added a reusable `Button` component with multiple size variants for the UI.
 - Expanded the `Hero` section background with a stronger gradient overlay and animated light-blue floating dots.
 - The Navbar is not final yet and may be reworked later.
+<<<<<<< HEAD
 >>>>>>> 6bb3a0ea83e786d9ec66eb82252c58beb7579ad8
+=======
+
+>>>>>>> b44f10c6082b77e0756a22a17c8aecebc320e612
 
 - React 19
 - Vite
