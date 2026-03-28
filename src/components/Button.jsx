@@ -17,7 +17,7 @@ export const Button = ({
     const classes = `${baseClasses} ${sizeClasses[size]} ${className}`;
     return (
         <button type={type} className={classes} {...probs}>
-            <span className="relative flex items-center justify-center gap-2">
+            <span className="relative flex items-center justify-center gap-2 text-secodary-foreground transition-all duration-300">
                 {children}
             </span>
         </button>

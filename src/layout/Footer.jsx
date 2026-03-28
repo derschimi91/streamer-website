@@ -27,8 +27,8 @@ export const Footer = () => {
                     
                     {/* Logo and Copyright */}
                     <div className="text-center md:text-left">
-                        <a href="#" className="text-xl font-bold tracking-tight">
-                            Der<span>_</span>Schimanski
+                        <a href="#" className="text-xl font-bold tracking-tight hover:text-footer-hover-primary transition-all duration-500">
+                            Der<span className="text-primary">_</span>Schimanski
                         </a>
                         <p className="text-sm text-muted-foreground mt-2">
                             &copy; {currentYear} Der_Schimanski. All rights reserved.
@@ -41,7 +41,7 @@ export const Footer = () => {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                                className="text-sm text-footer-primary hover:text-footer-hover-primary transition-colors duration-300"
                             >
                                 {link.label}
                             </a>
@@ -55,7 +55,7 @@ export const Footer = () => {
                                 key={social.label}
                                 href={social.href}
                                 aria-label={social.label}
-                                className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all"
+                                className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-500"
                             >
                                 <social.icon className="w-5 h-5" />
                             </a>

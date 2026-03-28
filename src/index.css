@@ -31,6 +31,11 @@
   /* Color Hover for Navbar */
   --color-hover-navbar: #5f7e9a;
 
+  /* Color for Footer Navbar */
+  --color-footer-primary: #4f7e9b;
+  --color-footer-secondary: #f9d7f9;
+  --color-footer-hover-primary: var(--color-highlight);
+
   /* Radius */
 
   --radius-25: 0.25rem;
