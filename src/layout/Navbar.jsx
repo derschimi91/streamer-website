@@ -10,6 +10,8 @@ const navLinks = [
     { href: "#cooperations", label: "Cooperations" },
 ];
 
+
+
 export const Navbar = () => {
 
     const [isMoblieMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -27,15 +29,21 @@ export const Navbar = () => {
     return (
         <header className={`fixed top-0 left-0 right-0 transition-all duration-500 ${ isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} z-50`}>
             <nav className="container-navbar mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight hover:text-primary hover:duration-800">
-                    Der<span className="text-primary">_</span>Schimanski
-                </a>
+                    <a href="#" className="flex items-start gap-4 text-xl font-bold tracking-tight hover:text-primary hover:duration-800">
+                        <img 
+                            src="/my_Character_2.png"
+                            alt="Der Schimanski Logo"
+                            className="w-10 h-10 rounded-full shrink-0 top-0"/>
+                        <span className="leading-10">
+                            Der<span className="text-primary">_</span>Schimanski
+                        </span>
+                    </a>
 
                 { /* Desktop Navigation */ }
                 <div className="flex items-center gap-1">
                     <div className="glass rounded-full px-2 py-1 flex items-center gap-1">
                         {navLinks.map((link, index) => (
-                            <a href={link.href} key={index} className="px-4 py-2 text-sm text-shadow-secondary-foreground hover:text-primary rounded-full hover:bg-hover-navbar">
+                            <a href={link.href} key={index} className="px-6 py-3 text-sm text-shadow-secondary-foreground hover:text-primary rounded-full hover:bg-hover-navbar/20 hover:border-border/40 hover:backdrop-blur-lg">
                                 {link.label}
                             </a>
                         ))}

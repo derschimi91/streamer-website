@@ -25,13 +25,25 @@ export const Footer = () => {
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                     
                     {/* Logo and Copyright */}
-                    <div className="text-center md:text-left">
-                        <a href="#" className="text-xl font-bold tracking-tight hover:text-footer-hover-primary transition-all duration-500">
-                            Der<span className="text-primary">_</span>Schimanski
-                        </a>
-                        <p className="text-sm text-muted-foreground mt-2">
-                            &copy; {currentYear} Der_Schimanski. All rights reserved.
-                        </p>
+                    <div className="text-center md:text-left flex items-start gap-3">
+                        <img
+                            src="/my_Character_2.png"
+                            className="w-15 h-15 rounded-full shrink-0"
+                            alt="Der Schimanski Logo Footer" 
+                        />
+                        
+                        <div className="flex flex-col">
+                            <a
+                                href="#"
+                                className="text-xl font-bold tracking-tight hover:text-footer-hover-primary transition-all duration-500"
+                            >
+                                Der<span className="text-primary">_</span>Schimanski
+                            </a>
+
+                            <p className="text-sm text-muted-foreground mt-2">
+                                &copy; {currentYear} Der_Schimanski. All rights reserved.
+                            </p>
+                        </div>
                     </div>
 
                     {/* Links */}
