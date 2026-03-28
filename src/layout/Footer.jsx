@@ -13,8 +13,7 @@ const footerLinks = [
     { href: "#about", label: "About" },
     { href: "#mystats", label: "MyStats" },
     { href: "#highlights", label: "Highlights" },
-    { href: "#mymaingames", label: "MyMainGames" },
-    { href: "#cooperations", label: "Cooperations" }
+    { href: "#mymaingames", label: "MyMainGames" }
 ];
 
 export const Footer = () => {
