@@ -3,7 +3,34 @@
 Eine persoenliche Streamer- und Creator-Website fuer Der_Schimanski, aufgebaut mit React, Vite und Tailwind CSS.
 Das Projekt entwickelt sich Schritt fuer Schritt zu einer modernen Landingpage mit eigener Farbwelt, wiederverwendbaren UI-Komponenten und einer glasartigen Oberfläche.
 
+<<<<<<< HEAD
 ## Tech Stack
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> b44f10c6082b77e0756a22a17c8aecebc320e612
+## Tech Stack
+=======
+- Added the main page structure with the `Hero`, `About`, `MyStats`, `Highlights`, `MyMainGames`, `Cooperations`, `Media`, and `Contact` sections.
+- Improved the Navbar with desktop navigation, a scroll effect, a mobile menu, and a logo image.
+- Refined the Navbar logo layout so the image and text sit next to each other more cleanly.
+- Added the `glass-strong` class in `index.css` to give the Navbar a stronger glass effect while scrolling.
+- Enhanced the `glass` and `glass-strong` classes with borders, glow, inset highlights, and radial light effects for a stronger glass look.
+- Added a new Footer with navigation links, social media icons, and the current year.
+- Updated the Footer layout so the copyright text now sits below the name and next to the logo image.
+- Increased and refined the Footer logo area for a clearer visual identity.
+- Switched the social media icons in the Footer to `react-icons`.
+- Added a reusable `Button` component with multiple size variants for the UI.
+- Expanded the `Hero` section background with a stronger gradient overlay and animated light-blue floating dots.
+- The Navbar is not final yet and may be reworked later.
+<<<<<<< HEAD
+>>>>>>> 6bb3a0ea83e786d9ec66eb82252c58beb7579ad8
+=======
+
+>>>>>>> b44f10c6082b77e0756a22a17c8aecebc320e612
+>>>>>>> 573f84afb7a8345b72dbd16131f955a87fdbf153
 
 - React 19
 - Vite
